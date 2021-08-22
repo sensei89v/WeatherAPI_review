@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+  </head>
+  <body>
+      <h1>Weather API</h1>
+       <br>
+      <form action="weather-forecast/" method="GET">        
+        <h2>Choose a region</h2>
+          {{country_codes | safe}}
+        <h2>Choose a date</h2>
+          {{ dates | safe }} 
+        <br>
+        <input type="submit" value="Enter">
+      </form>
+  </body>
+</html>
